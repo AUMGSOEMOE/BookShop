@@ -19,7 +19,7 @@ const DetailBookPage = () => {
             </div>
           </div>
           <div className=" col-span-9 row-span-2 p-5 ">
-            <h1 className=" text-3xl  font-bold">Book:{data.title}</h1>
+            <h1 className=" text-3xl  font-bold">{data.title}</h1>
             <h3 className=" text-xl font-semibold">Author : {data.author}</h3>
             <h6 className=" text-lg font-medium ">Summary :</h6>
             <div className=" px-5">

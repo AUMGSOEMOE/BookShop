@@ -1,7 +1,7 @@
 import React from "react";
 
 const BookListsComponent = ({
-  data: { id, author, description, title, image },
+  data: { id, author, description, title, image, price },
 }) => {
   return (
     <div className=" mt-5">
@@ -12,6 +12,7 @@ const BookListsComponent = ({
         <div className=" mt-7 ml-7">
           <h1 className=" text-xl font-bold ">Book : {title}</h1>
           <h4 className=" text-md font-medium">Author : {author}</h4>
+          <p>Price : ${price}</p>
           <div className=" w-[100%] mt-3 ">
             <p className="text-center underline text-md font-medium ">
               Description

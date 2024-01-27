@@ -1,11 +1,10 @@
-import React from "react";
-import useFetch from "../hook/useFetch";
-import { GetDataBook } from "../service/book.service";
+import React, { useContext } from "react";
 import { BookLists } from "../components";
 import { Link } from "react-router-dom";
+import { DataContext } from "../context/DataContext";
 
 const HomePage = () => {
-  const { loading, data, error } = useFetch(GetDataBook, "books");
+  const { data, error, loading } = useContext(DataContext);
   // console.log(data);
   return (
     <div>
