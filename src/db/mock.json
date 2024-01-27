@@ -1,0 +1,116 @@
+{
+    "books": [
+      {
+        "id": "1",
+        "image":"https://www.storytel.com/images/e/640x640/0002163291.jpg",
+        "title": "Burmese Days",
+        "author": "George Orwell",
+        "slug": "burmese-days",
+        "about" : "George Orwell is one of England's most famous writers and social commentators. Among his works are the classic political satire Animal Farm and the dystopian nightmare vision Nineteen Eighty-Four. Orwell was also a prolific essayist, and it is for these works that he was perhaps best known during his lifetime. They include Why I Write and Politics and the English Language. His writing is at once insightful, poignant and entertaining, and continues to be read widely all over the world.",
+        "price" :15.98,
+        "description": "A novel by George Orwell set in British-ruled Burma, providing a critical portrayal of colonialism.",
+        "summary" : "One of the men, James Flory, a timber merchant, has grown soft, clearly comprehending the futility of England’s rule. However, he lacks the fortitude to stand up for his Indian friend, Dr. Veraswami, for admittance into the whites-only club. Without membership and the accompanying prestige that would protect the doctor, the condemning and ill-founded attack by a bitter magistrate might bring an end to everything he has accomplished. Complicating matters, Flory falls unexpectedly in love with a newly arrived English girl, Elizabeth Lackersteen. Can he find the strength to do right not only by his friend, but also by his conscience?"
+      },
+      {
+        "id": "2",
+        "image" : "https://m.media-amazon.com/images/I/71r0ssb2NKL._SL1500_.jpg",
+        "title": "The Glass Palace",
+        "author": "Amitav Ghosh",
+        "slug": "the-glass-palace",
+        "about" : "Amitav Ghosh (born 11 July 1956), is a Bengali Indian author best known for his work in English fiction.",
+        "price" :10.99,
+        "description": "An epic novel spanning decades and exploring the history of Burma, India, and Malaysia.",
+        "summary":"Set in Burma during the British invasion of 1885, this masterly novel tells the story of Rajkumar, a poor boy lifted on the tides of political and social chaos, who goes on to create an empire in the Burmese teak forest. When soldiers force the royal family out of the Glass Palace and into exile, Rajkumar befriends Dolly, a young woman in the court of the Burmese Queen, whose love will shape his life. He cannot forget her, and years later, as a rich man, he goes in search of her. The struggles that have made Burma, India, and Malaya the places they are today are illuminated in this wonderful novel by the writer Chitra Divakaruni calls “a master storyteller.”"
+      },
+      {
+        "id": "3",
+        "image" : "https://m.media-amazon.com/images/I/61IBk9ZReIL._SL1117_.jpg",        
+        "title": "From the Land of Green Ghosts",
+        "author": "Pascal Khoo Thwe",
+        "slug": "from-the-land-of-green-ghosts",
+        "about" : "Pascal Khoo Thwe (born 1967) is a Burmese author from the minority Padaung people,known for his autobiographic writings about growing up in Burma under military rule. His book, From the Land of Green Ghosts: A Burmese Odyssey, was awarded the Kiriyama Prize.",
+        "price" :6.89,
+        "summary" : "It was during a tour on a trip through Burma that John Casey, a Cambridge don, first met Pascal Khoo Thwe, who was moonlighting in a Chinese restaurant to support himself as a student at Mandalay University. Thwe was born a member of the Padaung tribe in Burma where political turmoil and poverty are ever-present realities.Thwe left school to join the student rebels during the great insurrection of 1988, but remained in touch with Casey. He was forced to flee the country. It was his connection to Casey that enabled him to emigrate to England where he was admitted to Cambridge University. Despite his humble beginnings and the oppression he faced, Pascal Khoo Thwe brings us into a world forgotten by the West, but one that readers will not soon forget.",
+        "description": "An autobiography recounting the author's life as a member of the Padaung hill tribe in Burma."
+      },
+      {
+        "id": "4",
+        "image" : "https://m.media-amazon.com/images/I/51GGIPG1KSL.jpg",
+        "title": "The Lizard Cage",
+        "author": "Karen Connelly",
+        "slug": "the-lizard-cage",
+        "about" : "Karen Connelly is the author of the internationally acclaimed novel The Lizard Cage which won the Orange Broadband New Writers Prize in 2006, was shortlisted for the Kiriyama Prize, and has been optioned for film. The New York Times Review of Books likened the novel to the works of Solzhenitsyn and Orwell.",
+       "price" :7.99,
+        "summary" : "Teza once electrified the people of Burma with his protest songs against the dictatorship. Arrested by the Burmese secret police in the days of mass protest, he is seven years into a twenty-year sentence in solitary confinement. Cut off from his family and contact with other prisoners, he applies his acute intelligence, Buddhist patience, and humor to find meaning in the interminable days, and searches for news in every being and object that is grudgingly allowed into his cell.Despite his isolation, Teza has a profound influence on the people around him. His very existence challenges the brutal authority of the jailers, and his steadfast spirit inspires radical change. Even when Teza’s criminal server tries to compromise the singer for his own gain, Teza befriends him and risks falling into the trap of forbidden conversation, food, and the most dangerous contraband of all: paper and pen.",
+        "description": "A novel set in a Burmese prison, providing a poignant exploration of political repression and human resilience."
+      },
+      {
+        "id": "5",
+        "image" : "https://m.media-amazon.com/images/I/81aWVHQMqnL._SL1500_.jpg",
+        "title": "Letters from Burma",
+        "author": "Aung San Suu Kyi",
+        "slug": "letters-from-burma",
+        "about" : "Aung San Suu Kyi ( born 19 June 1945), sometimes abbreviated to Suu Kyi,is a Burmese politician, diplomat, author, and a 1991 Nobel Peace Prize laureate who served as State Counsellor of Myanmar (equivalent to a prime minister) and Minister of Foreign Affairs from 2016 to 2021. She has served as the general secretary of the National League for Democracy (NLD) since the party's founding in 1988 and was registered as its chairperson while it was a legal party from 2011 to 2023.She played a vital role in Myanmar's transition from military junta to partial democracy in the 2010s.",
+        "price" :9.99,
+        "summary" : "Letters from Burma - an unforgettable collection from the Nobel Peace prize winner Aung San Suu Kyi In these astonishing letters, Aung San Suu Kyi reaches out beyond Burma's borders to paint for her readers a vivid and poignant picture of her native land. Here she celebrates the courageous army officers, academics, actors and everyday people who have supported the National League for Democracy, often at great risk to their own lives. She reveals the impact of political decisions on the people of Burma, from the terrible cost to the children of imprisoned dissidents - allowed to see their parents for only fifteen minutes every fortnight - to the effect of inflation on the national diet and of state repression on traditions of hospitality. She also evokes the beauty of the country's seasons and scenery, customs and festivities that remain so close to her heart. Through these remarkable letters, the reader catches a glimpse of exactly what is at stake as Suu Kyi fights on for freedom in Burma, and of the love for her homeland that sustains her non-violent battle.",
+        "description": "A collection of letters and essays by Aung San Suu Kyi, offering insights into Burma's political and cultural landscape."
+      },
+      {
+        "id": "6",
+        "image" : "https://m.media-amazon.com/images/I/613JnljSNDL._SL1200_.jpg",
+        "title": "The Piano Tuner",
+        "author": "Daniel Mason",
+        "slug": "the-piano-tuner",
+        "about" : "Daniel Mason is the author of the collection A Registry of My Passage Upon the Earth, a finalist for the 2021 Pulitzer Prize and winner of the California Book Award, and three novels, including The Winter Soldier and The Piano Tuner. His work has been translated into twenty-eight languages, adapted as an opera, and awarded a Guggenheim fellowship, the Joyce Carol Oates Prize for Fiction, and a Fellowship from the National Endowment for the Arts.  He lives in the San Francisco Bay Area, where he is an assistant professor in the Stanford University Department of Psychiatry.",
+        "price" :13.99,
+        "summary" : "In 1886 a shy, middle-aged piano tuner named Edgar Drake receives an unusual commission from the British War Office: to travel to the remote jungles of northeast Burma and there repair a rare piano belonging to an eccentric army surgeon who has proven mysteriously indispensable to the imperial design. From this irresistible beginning, The Piano Tuner launches readers into a world of seductive, vibrantly rendered characters, and enmeshes them in an unbreakable spell of storytelling.",
+        "description": "A novel set in Burma during the British colonial period, revolving around a piano tuner's journey."
+      },
+      {
+        "id": "7",
+        "image" : "https://m.media-amazon.com/images/I/711uFA+ewkL._SL1500_.jpg",
+        "title": "The River of Lost Footsteps",
+        "author": "Thant Myint-U",
+        "slug": "the-river-of-lost-footsteps",
+        "about" : "Thant Myint-U (born 31 January 1966) is a Burmese-American historian, writer, grandson of former United Nations Secretary-General U Thant, former UN official, and former special advisor to the president for the peace process. He has authored five books, including The River of Lost Footsteps: A Personal History of Burma and Where China Meets India: Burma and the New Crossroads of Asia.He founded the Yangon Heritage Trust in 2012 to protect colonial architecture and lobby for urban planning in the Burmese commercial capital of Yangon.",
+        "price" :11.99,
+        "summary" : "Now Thant Myint-U tells the story of modern Burma, and the story of his own family, in an interwoven narrative that is by turns lyrical, dramatic, and deeply affecting. Through his prominent family's stories and those of others, he portrays Burma's rise and decline in the modern world, from the time of Portuguese pirates and renegade Mughal princes through a sixty-year civil war that continues today―the longest-running war anywhere in the world.The River of Lost Footsteps is a work at once personal and global, a 'brisk, vivid history' (Philip Delves Broughton, The Wall Street Journal) that makes Burma accessible and enthralling.",
+        "description": "A historical narrative exploring Burma's complex past, from ancient times to the present."
+      },
+      {
+        "id": "8",
+        "image" : "https://m.media-amazon.com/images/I/71WvirTPxJL._SL1200_.jpg",
+        "title": "The Art of Hearing Heartbeats",
+        "author": "Jan-Philipp Sendker",
+        "slug": "the-art-of-hearing-heartbeats",
+        "about" : "an-Philipp Sendker, born in Hamburg in 1960, was the American correspondent for Stern from 1990 to 1995, and its Asian correspondent from 1995 to 1999. In 2000 he published Cracks in the Wall, a nonfiction book about China. The Art of Hearing Heartbeats, his first novel, became an international best seller, and was followed by two sequels, A Well-Tempered Heart and The Heart Remembers. He lives in Potsdam with his family.",
+        "price" : 10.99,
+        "summary" : "When a successful New York lawyer suddenly disappears without a trace, neither his wife nor his daughter Julia has any idea where he might be…until they find a love letter he wrote many years ago, to a Burmese woman they have never heard of. Intent on solving the mystery and coming to terms with her father’s past, Julia decides to travel to the village where the woman lived. There she uncovers a tale of unimaginable hardship, resilience, and passion that will reaffirm the reader’s belief in the power of love to move mountains.",
+        "description": "A novel set in Burma, blending mystery and romance to explore themes of love and destiny."
+      },
+      {
+
+        "id": "9",
+        "image" : "https://m.media-amazon.com/images/I/71MQQxN0AnL._SL1500_.jpg",
+        "title": "Burma Chronicles",
+        "author": "Guy Delisle",
+        "slug": "burma-chronicles",
+        "about" : "Delisle studied animation at Sheridan College in Oakville, near Toronto, and then worked for the animation studio CinéGroupe in Montreal. He later worked for different studios in Canada, Germany, France, China and North Korea.",
+        "price" : 5.35,
+        "summary" : "From the author of Pyongyang: A Journey in North Korea and Shenzhen: A Travelogue from China comes Burma Chronicles, an informative look at a country that uses concealment and isolation as social control. It is drawn with Guy Delisle's minimal line, interspersed with wordless vignettes and moments of his distinctive slapstick humor.",
+        "description": "A graphic novel providing a humorous and insightful look at life in Burma through the eyes of the author."
+      },
+      {
+        "id": "10",
+        "image" : "https://m.media-amazon.com/images/I/81RbtuLKPmL._SL1500_.jpg",
+        "title": "Finding George Orwell in Burma",
+        "author": "Emma Larkin",
+        "price" : 10.00,
+        "about" : "She has been visiting Burma since around the year 2000.[4] Here she covers the military dictatorship that rules the country.[5] She is known for her coverage of Myanmar and George Orwell's experience within it in her debut book, Finding George Orwell in Burma. Speaking to the Democratic Voice of Burma, Larkin stated that she began that book in 2002 and travelled back and forth between Bangkok and Myanmar over the next two or three years. ",
+        "slug": "finding-george-orwell-in-burma",
+        "summary" : "Over the years the American writer Emma Larkin has spent traveling in Burma, also known as Myanmar, she's come to know all too well the many ways this brutal police state can be described as 'Orwellian'. The life of the mind exists in a state of siege in Burma, and it long has. But Burma's connection to George Orwell is not merely metaphorical; it is much deeper and more real. Orwell's mother was born in Burma, at the height of the British raj, and Orwell was fundamentally shaped by his experiences in Burma as a young man working for the British Imperial Police. When Orwell died, the novel-in-progress on his desk was set in Burma. It is the place George Orwell's work holds in Burma today, however, that most struck Emma Larkin. She was frequently told by Burmese acquaintances that Orwell did not write one book about their country - his first novel, Burmese Days - but in fact he wrote three, the 'trilogy' that included Animal Farm and Nineteen Eighty-Four. When Larkin quietly asked one Burmese intellectual if he knew the work of George Orwell,",
+        "description": "A non-fiction work exploring the impact of George Orwell's writings on modern-day Burma."
+      }
+    ]
+  }
+  
