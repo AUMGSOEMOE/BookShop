@@ -7,29 +7,39 @@ const RegisterPage = () => {
   const [added, setAdded] = useState(false);
   const formRef = useRef();
   const nav = useNavigate();
-  const { users, addUser } = useContext(DataContext);
+  const { addUser } = useContext(DataContext);
   const handleForm = async (e) => {
     e.preventDefault();
     const formData = new FormData(formRef.current);
-    const { data } = await api.get("users");
+    const { data } = await api.post("users", {
+      email: formData.get("email"),
+      username: formData.get("user_name"),
+      password: formData.get("password"),
+    });
+    console.log(data);
+    addUser(data);
+    localStorage.setItem("auth", JSON.stringify(data));
+    nav("/dashboard");
+    // const { data } = await api.get("users");
 
-    const compareUsername = data.username === formData.username;
-    const comparePassword = data.password === formData.password;
-    const compareEmail = data.email === formData.email;
+    // const compareUsername = data.username === formData.username;
+    // const comparePassword = data.password === formData.password;
+    // const compareEmail = data.email === formData.email;
 
-    if ((compareUsername, comparePassword, compareEmail)) {
-      setAdded(true);
-      throw new Error();
-    } else {
-      const { data } = await api.post("users", {
-        email: formData.get("email"),
-        username: formData.get("user_name"),
-        password: formData.get("password"),
-      });
-      addUser(data);
-      localStorage.setItem("auth", JSON.stringify(data));
-      nav("/dashboard");
-    }
+    // if (compareUsername & comparePassword & compareEmail) {
+    //   setAdded(true);
+    //   // throw new Error();
+    // } else {
+    //   const { data } = await api.post("users", {
+    //     email: formData.get("email"),
+    //     username: formData.get("user_name"),
+    //     password: formData.get("password"),
+    //   });
+    //   console.log(data);
+    //   addUser(data);
+    //   localStorage.setItem("auth", JSON.stringify(data));
+    //   nav("/dashboard");
+    // }
   };
   return (
     <div className=" h-screen">
