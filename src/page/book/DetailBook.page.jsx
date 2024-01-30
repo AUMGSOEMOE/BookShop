@@ -1,24 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import useFetch from "../../hook/useFetch";
 import { GetDataBook } from "../../service/book.service";
 import { useParams } from "react-router-dom";
+import { DataContext } from "../../context/DataContext";
 
 const DetailBookPage = () => {
   const { id } = useParams();
   const { data, loading, error } = useFetch(GetDataBook, `books/${id}`);
-  console.log(data);
+  const { count, handleAdd, handleSus } = useContext(DataContext);
   return (
     <div>
       {loading ? (
         <h1>Loading...</h1>
       ) : (
         <div className=" grid grid-cols-12 grid-rows-3 w-[85%] h-screen mx-auto">
-          <div className=" flex items-center justify-center col-span-3  ">
+          <div className=" flex items-center justify-center col-span-3 border-r border-r-black  ">
             <div className=" w-[100px]">
               <img src={data.image} alt="" />
             </div>
           </div>
-          <div className=" col-span-9 row-span-2 p-5 ">
+          <div className=" col-span-9 row-span-2 p-5 border-b border-b-black   ">
             <h1 className=" text-3xl  font-bold">{data.title}</h1>
             <h3 className=" text-xl font-semibold">Author : {data.author}</h3>
             <h6 className=" text-lg font-medium ">Summary :</h6>
@@ -26,14 +27,14 @@ const DetailBookPage = () => {
               <p className="text-lg text-text">{data.summary}</p>
             </div>
           </div>
-          <div className=" col-span-3 row-span-2 ">
+          <div className=" col-span-3 row-span-2  border-r border-t border-t-black border-r-black   ">
             <h4 className=" text-center font-medium">{data.author}</h4>
             <p className=" px-2">{data.about}</p>
           </div>
           <div className=" col-span-9 flex flex-col justify-center items-center  ">
             <p className=" font-medium text-xl">Price : $ {data.price}</p>
             <div className="flex">
-              <button className="border-2 border-text">
+              <button onClick={handleSus} className="border-2 border-text">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -49,8 +50,8 @@ const DetailBookPage = () => {
                   />
                 </svg>
               </button>
-              <div className=" text-text w-52 bg-slate-300">1</div>
-              <button className=" border-2 border-text">
+              <div className=" text-text w-52 bg-slate-300">{count}</div>
+              <button onClick={handleAdd} className=" border-2 border-text">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

@@ -50,9 +50,9 @@
       "title": "Letters from Burma",
       "author": "Aung San Suu Kyi",
       "slug": "letters-from-burma",
-      "about": "Aung San Suu Kyi ( born 19 June 1945), sometimes abbreviated to Suu Kyi,is a Burmese politician, diplomat, author, and a 1991 Nobel Peace Prize laureate who served as State Counsellor of Myanmar (equivalent to a prime minister) and Minister of Foreign Affairs from 2016 to 2021. She has served as the general secretary of the National League for Democracy (NLD) since the party's founding in 1988 and was registered as its chairperson while it was a legal party from 2011 to 2023.She played a vital role in Myanmar's transition from military junta to partial democracy in the 2010s.",
+      "about": "Aung San Suu Kyi ( born 19 June 1945), sometimes abbreviated to Suu Kyi,is a Burmese politician, diplomat, author, and a 1991 Nobel Peace Prize laureate who served as State Counsellor of Myanmar (equivalent to a prime minister) and Minister of Foreign Affairs from 2016 to 2021. She has served as the general secretary of the National League for Democracy (NLD) since the party's founding in 1988 and was registered as its chairperson while it was a legal party from 2011 to 2023",
       "price": 9.99,
-      "summary": "Letters from Burma - an unforgettable collection from the Nobel Peace prize winner Aung San Suu Kyi In these astonishing letters, Aung San Suu Kyi reaches out beyond Burma's borders to paint for her readers a vivid and poignant picture of her native land. Here she celebrates the courageous army officers, academics, actors and everyday people who have supported the National League for Democracy, often at great risk to their own lives. She reveals the impact of political decisions on the people of Burma, from the terrible cost to the children of imprisoned dissidents - allowed to see their parents for only fifteen minutes every fortnight - to the effect of inflation on the national diet and of state repression on traditions of hospitality. She also evokes the beauty of the country's seasons and scenery, customs and festivities that remain so close to her heart. Through these remarkable letters, the reader catches a glimpse of exactly what is at stake as Suu Kyi fights on for freedom in Burma, and of the love for her homeland that sustains her non-violent battle.",
+      "summary": "Letters from Burma - an unforgettable collection from the Nobel Peace prize winner Aung San Suu Kyi In these astonishing letters, Aung San Suu Kyi reaches out beyond Burma's borders to paint for her readers a vivid and poignant picture of her native land. Here she celebrates the courageous army officers, academics, actors and everyday people who have supported the National League for Democracy, often at great risk to their own lives. She reveals the impact of political decisions on the people of Burma, from the terrible cost to the children of imprisoned dissidents - allowed to see their parents for only fifteen minutes every fortnight - to the effect of inflation on the national diet and of state repression on traditions of hospitality. She also evokes the beauty of the country's seasons and scenery, customs and festivities that remain so close to her heart.",
       "description": "A collection of letters and essays by Aung San Suu Kyi, offering insights into Burma's political and cultural landscape."
     },
     {
@@ -113,22 +113,28 @@
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "Soe Moe",
       "email": "soemoe2580aa@gmail.com",
-      "password": 123456
+      "password": "123456"
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "Aung Aung",
       "email": "aungaung2002aa@gmail.com",
-      "password": 789012
+      "password": "789012"
     },
     {
-      "id": "930f",
+      "id": "7c92",
       "email": "asm@gmail.com",
       "username": "agoe",
-      "password": "234567"
+      "password": "123456"
+    },
+    {
+      "id": "91b0",
+      "email": "agoe@gmail.com",
+      "username": "asm",
+      "password": "123456"
     }
   ]
 }

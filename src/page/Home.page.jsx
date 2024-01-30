@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { BookLists } from "../components";
-import { Link } from "react-router-dom";
 import { DataContext } from "../context/DataContext";
 
 const HomePage = () => {
@@ -14,9 +13,7 @@ const HomePage = () => {
         ) : (
           <div className=" grid grid-cols-2 gap-y-4 gap-x-2 ">
             {data.map((i) => (
-              <Link to={`/detail/${i.id}`} key={i.id}>
-                <BookLists data={i} />
-              </Link>
+              <BookLists key={i.id} data={i} />
             ))}
           </div>
         )}

@@ -1,4 +1,6 @@
+import { useContext } from "react";
 import { api } from "./baseUrl";
+import { DataContext } from "../context/DataContext";
 
 export const Auth = async (arg, formData) => {
   try {
@@ -13,7 +15,5 @@ export const Auth = async (arg, formData) => {
     }
 
     return user;
-  } catch (error) {
-    throw new Error(error.message);
-  }
+  } catch (error) {}
 };

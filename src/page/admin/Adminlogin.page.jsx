@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Auth } from "../../service/user.service";
 import { useNavigate, Link } from "react-router-dom";
+import { DataContext } from "../../context/DataContext";
 
 const AdminLoginPage = () => {
   const nav = useNavigate();
@@ -8,7 +9,7 @@ const AdminLoginPage = () => {
     email: "",
     password: "",
   });
-
+  const { noHave, setNoHave } = useContext(DataContext);
   useEffect(() => {
     const finder = localStorage.getItem("auth");
 
@@ -20,10 +21,14 @@ const AdminLoginPage = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     const data = await Auth("users", formData);
+
     localStorage.setItem("auth", JSON.stringify(data));
 
     if (data) {
       nav("/dashboard");
+    } else {
+      setNoHave(true);
+      localStorage.removeItem("auth");
     }
   };
   return (
@@ -68,6 +73,25 @@ const AdminLoginPage = () => {
             Login
           </button>
         </div>
+        {noHave && (
+          <div className="flex text-red-600 mt-4 justify-center items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill=""
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-4 h-4  bg-nav  rounded-full"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+            <span>Account has not registered.</span>
+          </div>
+        )}
         <div className="flex mt-4 justify-between">
           <div className="flex  items-center">
             <svg

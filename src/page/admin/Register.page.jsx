@@ -1,56 +1,76 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { api } from "../../service/baseUrl";
 import { DataContext } from "../../context/DataContext";
 
 const RegisterPage = () => {
   const [added, setAdded] = useState(false);
-  const formRef = useRef();
+
+  //single ref
+  const emailRef = useRef();
+  const nameRef = useRef();
+  const passRef = useRef();
+
+  //form ref
+  // const formRef = useRef();
+
   const nav = useNavigate();
-  const { addUser } = useContext(DataContext);
+
+  //use single ref
+
   const handleForm = async (e) => {
     e.preventDefault();
-    const formData = new FormData(formRef.current);
-    const { data } = await api.post("users", {
-      email: formData.get("email"),
-      username: formData.get("user_name"),
-      password: formData.get("password"),
-    });
-    console.log(data);
-    addUser(data);
-    localStorage.setItem("auth", JSON.stringify(data));
-    nav("/dashboard");
-    // const { data } = await api.get("users");
+    const { data } = await api.get("users");
 
-    // const compareUsername = data.username === formData.username;
-    // const comparePassword = data.password === formData.password;
-    // const compareEmail = data.email === formData.email;
+    const findEmail = data.find((i) => i.email === emailRef.current.value);
+    console.log(findEmail);
+    console.log(emailRef.current.value);
 
-    // if (compareUsername & comparePassword & compareEmail) {
-    //   setAdded(true);
-    //   // throw new Error();
-    // } else {
-    //   const { data } = await api.post("users", {
-    //     email: formData.get("email"),
-    //     username: formData.get("user_name"),
-    //     password: formData.get("password"),
-    //   });
-    //   console.log(data);
-    //   addUser(data);
-    //   localStorage.setItem("auth", JSON.stringify(data));
-    //   nav("/dashboard");
-    // }
+    if (findEmail) {
+      setAdded(true);
+      throw new Error();
+    } else {
+      const { data } = await api.post("users", {
+        email: emailRef.current.value,
+        username: nameRef.current.value,
+        password: passRef.current.value,
+      });
+      localStorage.setItem("auth", JSON.stringify(data));
+      nav("/dashboard");
+    }
   };
+  const handleToLogin = () => {
+    localStorage.removeItem("auth");
+  };
+
+  //use form ref
+
+  // const handelForm = async (e) => {
+  //   e.preventDefault();
+
+  //   const { data } = await api.get("users");
+  //   console.log(formRef.current);
+  // const findEmail = data.find(i => i.email)
+  // const formData = new FormData(formRef.current);
+  // const { data } = await api.post("users", {
+  //   email: formData.get("email"),
+  //   username: formData.get("user_name"),
+  //   password: formData.get("password"),
+  // });
+  // console.log(data);
+  // };
+
   return (
     <div className=" h-screen">
       <form
-        ref={formRef}
+        // ref={formRef}
         onSubmit={handleForm}
         className="w-[30%] mt-7 shadow-2xl mx-auto p-5 border  border-text"
       >
         <div className="flex  flex-col">
           <label htmlFor="email">Email</label>
           <input
+            ref={emailRef}
             type="email"
             className="border-2 mt-1 border-black"
             name="email"
@@ -61,6 +81,7 @@ const RegisterPage = () => {
         <div className="flex  flex-col mt-3">
           <label htmlFor="userName">Username</label>
           <input
+            ref={nameRef}
             type="text"
             className="border-2 mt-1 border-black"
             name="user_name"
@@ -71,6 +92,7 @@ const RegisterPage = () => {
         <div className="flex flex-col mt-3">
           <label htmlFor="password">Password</label>
           <input
+            ref={passRef}
             type="password"
             className="border-2 mt-1  border-black"
             name="password"
@@ -130,7 +152,10 @@ const RegisterPage = () => {
             </div>
           </div>
           <Link to={"/adminLogin"}>
-            <button className=" font-medium underline text-text">
+            <button
+              onClick={handleToLogin}
+              className=" font-medium underline text-text"
+            >
               To Login
             </button>
           </Link>

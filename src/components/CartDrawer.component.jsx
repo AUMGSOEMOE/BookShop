@@ -1,8 +1,23 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { DataContext } from "../context/DataContext";
+import { api } from "../service/baseUrl";
+import Cart from "./Cart.component";
+import CartComponent from "./Cart.component";
 
 const CartDrawerComponent = () => {
   const { toggleDrawer } = useContext(DataContext);
+
+  // useEffect(() => {
+  //   const item = async () => {
+  //     const { data } = await api.get("books");
+  //     console.log(data);
+  //   };
+  //   item();
+  // }, []);
+  //  async items() => (book = await api.get("books"));
+
+  // console.log(items);
+
   return (
     <div
       id="drawer-example"
@@ -59,7 +74,9 @@ const CartDrawerComponent = () => {
           <span className="sr-only">Close menu</span>
         </button>
       </div>
-      <div></div>
+      <div>
+        <CartComponent />
+      </div>
       <div></div>
     </div>
   );
